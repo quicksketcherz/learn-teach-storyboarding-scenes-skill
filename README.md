@@ -67,7 +67,7 @@ Sessions are designed for pairs but work solo. An iPhone timer is the truth sour
 
 ## Credits
 
-Created by **John Barros** (@quicksketcherz).
+Created by **John Barros** ([@quicksketcherz](https://github.com/quicksketcherz)).
 Method: *Storyboarding as Choreography* — a practice for learning storyboarding through real session exercises.
 
 ## License
