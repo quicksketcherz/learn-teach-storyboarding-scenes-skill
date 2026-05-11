@@ -62,3 +62,14 @@ Sessions are designed for pairs but work solo. An iPhone timer is the truth sour
 - [Claude Code](https://claude.ai/code) (CLI or desktop app)
 - Paper and pencil (or iPad)
 - An iPhone (or any timer)
+
+---
+
+## Credits
+
+Created by **John Barros** (@quicksketcherz).
+Method: *Storyboarding as Choreography* — a practice for learning storyboarding through real session exercises.
+
+## License
+
+MIT — see [LICENSE](LICENSE). Free to use, copy, modify, and share with attribution.
