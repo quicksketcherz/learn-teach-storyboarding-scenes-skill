@@ -1,5 +1,5 @@
 ---
-name: phase2-storyboarding-skill
+name: phase2-storyboarding
 description: Run a Phase 2 storyboarding session for the "Storyboarding as Choreography" practice — conduct a sequence-study session step-by-step from start to finish, where the user studies a 30–90 second clip from real media and draws it from memory across three timed passes. Use this skill whenever the user says "lets do phase 2", "phase 2 session", "run phase 2", "phase 2 round", asks for a Phase 2 brief, asks for help picking or trimming a sequence to study, or otherwise signals they're starting a Phase 2 storyboarding round. Trigger on any of those even when the user doesn't explicitly say "skill" or "phase 2 storyboarding skill." This skill walks the user through every timed step so they don't have to keep the template open.
 ---
 
@@ -177,5 +177,5 @@ The exception is the **commentary lens suggestion** in Step 6 — that's worth t
 - Track real time. The iPhone timer is the truth source. You only mark transitions.
 - Critique the user's drawings during a pass. The session method is *no feedback during work* — feedback lives in the commentary track.
 - Write the divergence, session insight, or carry-forward for them. Those are the user's reflective work. Just nudge at wrap-up.
-- Generate a Phase 3 script. If the user wants to continue from their Phase 2 panels into a directing round, hand off to the `phase3-storyboarding-skill` (continuation mode).
+- Generate a Phase 3 script. If the user wants to continue from their Phase 2 panels into a directing round, hand off to the `phase3-storyboarding` (continuation mode).
 - Replace the template. The session template at `templates/phase2-session-template/phase2-session-template-v3.md` (bundled in this repo) is the master document. This skill is a session companion.

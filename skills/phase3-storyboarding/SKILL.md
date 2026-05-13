@@ -1,5 +1,5 @@
 ---
-name: phase3-storyboarding-skill
+name: phase3-storyboarding
 description: Run a Phase 3 storyboarding session for the "Storyboarding as Choreography" practice — generate a 1-story-beat script (action lines only, no dialogue) from a planning Q&A and conduct the session step-by-step from start to finish, including two pitch + candor exchanges modeled on the Pixar Braintrust. Use this skill whenever the user says "lets do phase 3", "phase 3 session", "run phase 3", "phase 3 round", asks for a Phase 3 brief, supplies a photo of finished Phase 2 panels and asks for a continuation script, or otherwise signals they're starting a Phase 3 storyboarding round. Trigger on any of those even when the user doesn't explicitly say "skill" or "phase 3 storyboarding skill." This skill writes the script AND walks the user through every timed step so they don't have to keep the template open.
 ---
 

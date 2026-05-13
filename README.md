@@ -20,16 +20,16 @@ Skills live in `skills/`. Copy the phase folders you want into your Claude Code 
 
 **Global install** (available in all projects):
 ```bash
-cp -r skills/phase1-storyboarding-skill ~/.claude/skills/
-cp -r skills/phase2-storyboarding-skill ~/.claude/skills/
-cp -r skills/phase3-storyboarding-skill ~/.claude/skills/
+cp -r skills/phase1-storyboarding ~/.claude/skills/
+cp -r skills/phase2-storyboarding ~/.claude/skills/
+cp -r skills/phase3-storyboarding ~/.claude/skills/
 ```
 
 **Project-only install** (available in one project):
 ```bash
-cp -r skills/phase1-storyboarding-skill .claude/skills/
-cp -r skills/phase2-storyboarding-skill .claude/skills/
-cp -r skills/phase3-storyboarding-skill .claude/skills/
+cp -r skills/phase1-storyboarding .claude/skills/
+cp -r skills/phase2-storyboarding .claude/skills/
+cp -r skills/phase3-storyboarding .claude/skills/
 ```
 
 Then in Claude Code, trigger a session with:

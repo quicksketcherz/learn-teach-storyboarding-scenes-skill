@@ -1,5 +1,5 @@
 ---
-name: phase1-storyboarding-skill
+name: phase1-storyboarding
 description: Run a Phase 1 storyboarding session for the "Storyboarding as Choreography" practice — conduct an observation session step-by-step from start to finish, where the user studies a 30–90 second clip from real media and sketches 4 compositions plus 1 original freestyle frame in 5 minutes, then annotates and shares using commentary lenses. Use this skill whenever the user says "lets do phase 1", "phase 1 session", "run phase 1", "phase 1 round", asks for a Phase 1 brief, asks for help picking or trimming a sequence to study, or otherwise signals they're starting a Phase 1 storyboarding round. Trigger on any of those even when the user doesn't explicitly say "skill" or "phase 1 storyboarding skill." This skill walks the user through every timed step so they don't have to keep the template open.
 ---
 
@@ -143,5 +143,5 @@ Keep announcements **short** and call-to-action — the user is mid-session, pap
 - Track real time. The iPhone timer is the truth source. You only mark transitions.
 - Critique the user's drawings during the sketch. The session method is *no feedback during work* — feedback lives in the commentary track.
 - Write the divergence, session insight, or carry-forward for them. Those are the user's reflective work. Just nudge at wrap-up.
-- Run a sequence-memory pass. That's Phase 2. If the user wants to roll the same sequence forward into a Phase 2 round, hand off to the `phase2-storyboarding-skill`.
+- Run a sequence-memory pass. That's Phase 2. If the user wants to roll the same sequence forward into a Phase 2 round, hand off to the `phase2-storyboarding`.
 - Replace the template. The session template at `templates/phase1-session-template/phase1-session-template-v3.md` (bundled in this repo) is the master document. This skill is a session companion.
