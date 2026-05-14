@@ -22,7 +22,7 @@ That's it. Composition, framing, and camera are the participant's job — the sk
 
 ## How the skill behaves on trigger
 
-**Generate immediately. Don't ask questions first.** Roll random defaults across the parameters and produce a beat in the default Format 2 layout. Show the user *which* defaults rolled, so they can course-correct. Then offer the refine menu.
+**Generate immediately. Don't ask questions first.** Roll random defaults across the parameters and produce a beat in the default output format. Show the user *which* defaults rolled, so they can course-correct. Then offer the refine menu.
 
 This is the "collaborative screenwriter" pattern. The page reads first; the editorial conversation happens after.
 
@@ -35,17 +35,16 @@ Rolling random defaults:
 - Genre: [single genre / hybrid (genre × genre)] [(sub-tag: X)  ← only if a sub-tag rolled]
 - Era tint: [contemporary (default — line omitted) / historical-X / near-future / far-future]
 - Commitment level: [light tint / full commitment]
-- Named-work register: [none — fresh / in the register of X]
 - Constraint modifier: [none / named constraint]
 
-[Beat output in Format 2]
+[Beat output in the output format]
 
 [Refine menu via input UI]
 ```
 
 When **era tint = contemporary**, omit that line entirely (contemporary is the silent default — only surface era when it's doing work). Same for **sub-tag**: only show when one rolled.
 
-## Output format — Format 2
+## Output format
 
 Default output is **lean** — image + shift, nothing else. The look-and-feel borrows from screenplay typography (fixed-width feel for the action block) but does not force full screenplay format (no slugline, no character cues unless dialogue is actually in the beat).
 
@@ -90,10 +89,7 @@ The fenced code block carries the screenplay-action-block feel (fixed-width, pag
 | **Genre** | The genre tint the beat sits in. Pool of 17 (see below). | Roll random from the genre pool. ~20% of rolls produce a **hybrid** (two genres combined, e.g. sci-fi × fantasy, horror × romance, noir × western). Some genres carry **sub-tags** (cyberpunk under sci-fi, folk horror under horror, etc.) — when the parent rolls, the sub-tag rolls ~25% of the time. |
 | **Era tint** | Orthogonal time-period axis that *stacks on top of* genre. Most rolls are **contemporary** (default, silent). Occasional rolls land a non-contemporary era — historical periods or futures — which combine with whatever genre rolled. | Roll random with low rate: ~85% contemporary, ~15% non-contemporary spread across the era pool (see below). |
 | **Commitment level** | How visible the genre cue is in the action lines. *Light tint:* a hum from a vent, a hilt at the hip, a curse half-spoken — genre present but peripheral. *Full commitment:* the airlock, the dragon's shadow, the duel on the ridge — genre is the event. | Roll random — roughly 60% light tint, 40% full commitment. Light is more sketchable and avoids "too grand." |
-| **Named-work register** | Optional. "In the register of [named work]" — borrows tonal vocabulary from a named lineage (e.g. *Blade Runner 2049*, *Princess Mononoke*, *Mad Max: Fury Road*). | Default to none (fresh). Only used when the user asks. |
 | **Constraint modifier** | Optional. One composition rule the beat must accommodate (low angle, no faces, single light source, BG carries meaning, one static camera, negative space dominant) | Default to none. Only used when the user asks. |
-
-**Note on the beat-type parameter:** the v1 spec included a `beat type` parameter (action / emotional / turning / reveal). It was cut in v2 — across testing it never surfaced, was never missed, and added overhead. The taxonomy remains useful as orientation in writing, but it is not exposed as a runtime knob.
 
 ## Genre, era, and commitment — design notes
 
@@ -182,33 +178,28 @@ After every generation, surface a menu via the input UI. The menu is **condition
 - Flip commitment level (light tint ↔ full commitment)
 - Change scale (single ↔ mini-sequence)
 - Add a constraint modifier
-- Try a named-work register
 - Done — lock the changes / wrap up
 
 **Conditional on a constraint being active:**
 - Change constraint
 - Drop the constraint, keep the beat
 
-**Conditional on a named-work register being active:**
-- Try a different named work
-- Switch back to fresh (no named-work register)
-
 **Conditional on a hybrid genre being active:**
 - Drop one half of the hybrid
 - Reroll the other half
 
 **Conditional on hooks/lineage not yet shown:**
-- Show compositional hook
-- Show reference lineage
+- Add hook to this beat *(re-emits the full beat with the hook stacked inline — see "What to hold back by default")*
+- Show reference lineage *(also re-emitted inline with the beat)*
 
-**"Surprise me" should always be an option** wherever the user is making a choice (register, named work, constraint, panel count). Don't omit it.
+**"Surprise me" should always be an option** wherever the user is making a choice (register, constraint, panel count). Don't omit it.
 
 ## What to hold back by default
 
 These exist but stay hidden unless the user asks via the refine menu or directly:
 
 - **Reference lineage** — which director/show the tonal lineage borrows from. The principle is instinct-first: pre-loading the reference biases the eye before the sketch.
-- **Compositional hook** — what the staging needs to earn. Surfaces only on request, or automatically when the constraint modifier is active (because the constraint is what the hook explains).
+- **Compositional hook** — what the staging needs to earn. Surfaces only on request, or automatically when the constraint modifier is active (because the constraint is what the hook explains). **When surfaced via the refine menu, the hook does not arrive as a standalone reply — the skill re-emits the full beat (image + shift + hook) as a single stacked block so the page reads as one thing.** Splitting the hook off into its own reply forces the user to scroll between the frame and the note about the frame, which fights the ekonte logic the format is built on.
 
 ## Writing rules for the beat itself
 
@@ -219,7 +210,7 @@ Borrowed from screenwriting action-line craft, adapted for storyboard practice:
 - **Specific verbs over generic ones.** "Saunters," "tiptoes," "marches" — not "walks."
 - **Concrete physical detail carries mood.** A "sinister" house is a tell; a house "with one window lit from the inside, curtains drawn" is a show.
 - **Brevity.** 1–3 lines maximum per panel. White space matters. If it won't fit, the beat is too big and should be split.
-- **The shift is the margin note.** One line. Not a tagline. Not a summary. The thinking about the frame, sitting next to the frame.
+- **The shift is one line.** See "What a beat is here" for the full framing.
 
 ## Compositional hook — length rule
 
@@ -229,31 +220,21 @@ The hook is the editorial note in the margin of the page, not the production bri
 
 For mini-sequences with a constraint modifier active, each panel gets its own hook, each still 2–4 sentences.
 
-## The reference bank (parked — to be designed separately)
-
-A separate file will hold **director/show register specs** at `resources/storyboarding-knowledge-logs/beat-reference-bank.md`. These are not example beats and not full scripts — they are *the rules a work operates by*: tonal register, compositional rules, rhythm rules, what the work borrows from, what it refuses.
-
-The bank is parked until its format is designed. Until then, when the user asks for a beat "in the register of [named work]," generate fresh from general knowledge of the work and surface a **bank-empty flag**:
-
-> ⚠️ Bank empty for: [Work title]. Generated fresh. Add an entry to `resources/storyboarding-knowledge-logs/beat-reference-bank.md` once the bank is built.
-
-The flag is itself useful — it prompts bank-building over time. Don't suppress it.
-
 ## Anti-patterns to avoid
 
 Things this skill should **not** do, even if asked:
 
 - **Don't prescribe shot type or camera angle by default.** That's the participant's compositional decision. Constraints are explicit (via the modifier parameter); inferred staging is not.
 - **Don't generate full scenes.** If the output reads like a paragraph from a screenplay, it's too big. The unit is one moment.
-- **Don't force screenplay format.** Format 2 borrows the *look and feel* of a screenplay page (action block + margin note), but does not force a slugline, character cues, or scene structure. The beat is smaller than a scene.
+- **Don't force screenplay format.** The output borrows the *look and feel* of a screenplay page (action block + margin note), but does not force a slugline, character cues, or scene structure. The beat is smaller than a scene.
 - **Don't borrow Save the Cat or feature-length beat structures.** Those are macro tools for whole scripts; this is a single-shot generator.
 - **Don't substitute pattern-matching for design.** If a request is vague, generate with random defaults and let the refine menu do the steering — don't ask a form's worth of questions before producing anything.
-- **Don't lead with the reference.** Lineage is held back by default. The participant's instinct comes first.
-- **Don't let the shift drift into summary.** The shift is a margin note. If it's longer than one sentence, it's wrong.
+- **Don't lead with the reference** (see "What to hold back by default").
+- **Don't let the shift drift into summary.** Longer than one sentence = wrong.
 - **Don't let the compositional hook drift into a brief.** 2–4 sentences. One question.
-- **Don't default to prestige-drama domestic register.** Doorways, kitchen tables, folded letters, and breath on glass are *one* register, not the register. Rolled genre is not optional — honour it.
-- **Don't reach for spectacle when light tint is rolled.** A sci-fi beat at light tint is a server light, not a starship. A fantasy beat at light tint is a candle that won't go out, not a dragon. The smaller frame is almost always the sketchable one.
-- **Don't make hybrid genres equal-weighted blends.** One genre is the world, the other is the intrusion. *Horror × romance* is a romance world a horror intrudes on, not a 50/50 mash.
+- **Don't default to prestige-drama domestic register** (see "Why genre is its own parameter"). Rolled genre is not optional — honour it.
+- **Don't reach for spectacle when light tint is rolled** (see "Anti-grandness rule").
+- **Don't make hybrid genres equal-weighted blends** (see "Hybrid genres"). World × intrusion, not 50/50.
 
 ## Calibration examples
 
@@ -369,7 +350,6 @@ All examples obey the rules: present tense, visible/audible only, brief, fixed-w
 ## Known gaps (carry forward)
 
 - **Phase context untested.** The skill claims it's curriculum-wide (Phase 1–4) but the test session never invoked phase-specific behaviour. Whether the output should adjust based on phase is a real question that needs a real session to answer.
-- **Bank format is not yet designed.** The director/show register spec format needs to be drafted. The skill currently reads the bank only as a fallback; once specs exist, register-fidelity should rise noticeably.
 - **Compositional hook with no constraint active is undefined.** Currently the hook is only surfaced when constraint is active or on direct request. Whether "no-constraint" hooks should look different (and how) hasn't been tested.
 - **Genre + commitment + era landed in this iteration (2026-05-14).** Pool expanded from 10 → 17 genres because the v2 generator drifted to prestige-drama by default. Sub-tags added for the four genres with distinct sub-grammars. Era tint added as an orthogonal axis. Needs live test rolls to confirm: (a) the 20% hybrid rate feels right, (b) the 60/40 light-vs-full split feels right, (c) the 15% era-tint rate feels like flavour and not noise, (d) the 25% sub-tag rate feels right when parents roll, (e) light tint actually lands as light and not as drama with a prop. Adjust ratios if rolls feel skewed.
 - **Sub-tag list is short on purpose.** Only sub-genres with strong distinct visual grammar are in scope (cyberpunk, folk horror, epic/urban fantasy, screwball/dark comedy). If a new sub-tag earns a calibration example here, it can join the roll.
