@@ -166,6 +166,18 @@ Roughly **1 in 5 rolls** combines two genres (e.g. *sci-fi × fantasy*, *horror 
 
 These ratios are first-pass; adjust as live rolls reveal what feels right.
 
+### Register shapes (single, tip-compound, tension-compound)
+
+The register pool implicitly contains three shapes — name them so the roll uses all three deliberately.
+
+- **Single register** — one emotional note ("dread," "awe," "restrained anger"). The beat stages that note arriving, holding, or being interrupted. Most rolls.
+- **Tip-compound** — two notes connected by a directional arrow ("anticipation tipping into disappointment," "relief tipping into suspicion"). The beat's job is to stage the *tip* — the frame where the first note becomes the second. The shift annotation usually names the tipping moment.
+- **Tension-compound** — two notes held simultaneously in tension ("tenderness with hesitation," "pride with embarrassment," "grief with relief"). The beat's job is to stage both at once — usually by externalising one note into the body or environment while the other plays on the face, or by splitting the two across a gesture that gets started and not finished. The shift annotation usually names *why both notes are present in the same instant*.
+
+Tension-compounds are often the most sketchable of the three, because they force the staging to externalise something — a held breath, an unfinished gesture, an object set down instead of picked up. A single register can be carried by the face alone; a tension-compound usually can't.
+
+Roll across all three. Tip-compounds and tension-compounds together should account for roughly a third of rolls; singles the rest.
+
 ## The refine menu (post-generation)
 
 After every generation, surface a menu via the input UI. The menu is **conditional** — options only appear when they make sense given current state:
@@ -236,6 +248,51 @@ Things this skill should **not** do, even if asked:
 - **Don't reach for spectacle when light tint is rolled** (see "Anti-grandness rule").
 - **Don't make hybrid genres equal-weighted blends** (see "Hybrid genres"). World × intrusion, not 50/50.
 
+## Emergent patterns (inviting experimentation)
+
+The taught patterns in this skill — the genre pool, the register examples, the era list, the commitment levels — are settled. They've earned their place through live rolls. But they're not closed. The skill works best as a *living document*: some patterns are codified for reliability, others are being tested in real sessions and may earn a permanent spot later.
+
+The generator is invited — not required — to occasionally propose patterns that aren't in the standard pools. When it does, it flags them explicitly so the user can clock the experiment and decide whether it lands.
+
+### What emergence is allowed to stretch
+
+- **Register shapes.** The pool currently teaches three shapes (single, tip-compound, tension-compound). The generator may propose a fourth shape if a roll seems to want it — e.g. a *paired register* held by two characters in the same frame ("his anticipation, her dread"), or a *register reversal* where the beat starts in one note and ends in its opposite. Flag with: *"emergent register shape — [name], not in the standard pool."*
+- **Genre combinations.** Hybrids are taught as two-genre intrusions (world × intrusion). The generator may occasionally propose a three-way *tonal* combination — not three genres, but a genre plus an era plus a sub-register that resolves into something the pool doesn't name. Flag with: *"emergent genre handling — [description]."*
+- **Shift forms.** The shift annotation is taught as a one-line margin note naming what changes between start and end of the beat. The generator may experiment with shift forms that bend this — a shift that names what *fails* to change, a shift that names a *near-miss* (the moment that almost was), a shift that points to something *offscreen* that the panel implies. Flag with: *"emergent shift form — [description]."*
+
+### What emergence may not stretch
+
+Emergence operates inside the anti-patterns, not against them. Even a flagged emergent pattern must still obey: no prescribed camera angle, no full scenes, no screenplay format, no Save-the-Cat structures, no spectacle on light tint, no drift into prestige-drama domestic register, no hybrid as 50/50 blend. The frame stays the frame; only the *vocabulary* inside it expands.
+
+### How emergence gets flagged
+
+When the generator proposes an emergent pattern, the rolled-defaults block surfaces it explicitly. Example:
+
+```
+Rolling random defaults:
+- Scale: single panel
+- Emotional register: tenderness with hesitation  ← emergent tension-compound
+- Genre: coming-of-age
+- Commitment level: light tint
+- Constraint modifier: none
+```
+
+The arrow + note is the flag. It tells the user: *the generator reached for something outside the codified pool, here's where*. The user can keep it, regenerate with a standard register, or ask the generator to explain what shape it was reaching for.
+
+### The codify-or-discard loop
+
+Emergent patterns are proposals, not promotions. After a session, the user and the generator can review what emerged:
+
+- **Codify** — the pattern worked, was sketchable, produced a real beat. Move it into the taught pool with a calibration example. The pattern is now reliable.
+- **Hold** — the pattern was interesting but uncertain. Note it in "known gaps" for further testing across more rolls.
+- **Discard** — the pattern produced a beat that didn't sketch well, or duplicated a taught pattern in disguise. Drop it.
+
+This loop is the working method of the skill itself. Sessions are not just *uses* of the skill — they are how the skill grows. The user is a co-author through the rolls, the refines, and the post-session reviews.
+
+### Frequency of emergence
+
+The generator should reach for an emergent pattern roughly **1 in 6 rolls**. Often enough to keep the skill alive; rare enough that most rolls stay in the well-tested taught pool. If a session is producing one taught beat after another, the next roll is a good candidate for an emergent reach. If the user has flagged the last two emergent patterns as discards, back off — the pool wasn't ready. This ratio is first-pass; adjust as live rolls reveal what feels right.
+
 ## Calibration examples
 
 A well-formed single-panel beat, restrained anger register, no constraint:
@@ -301,6 +358,22 @@ at it.
 > **Shift:** the pulse is when routine becomes attention — before she has named what she's seeing.
 ````
 
+A single-panel beat, **tenderness with hesitation** register (tension-compound), genre: coming-of-age, commitment: light tint, no constraint:
+
+````
+```
+A teenager stands at a sink, holding her
+grandmother's ring under the tap. She turns
+it once between her fingers, then sets it
+on the rim of the soap dish instead of
+sliding it on.
+```
+
+> **Shift:** the decision to wear it gets postponed in the half-second between rinse and pocket.
+````
+
+The tenderness is the relationship to the ring; the hesitation is the soap dish instead of the finger. The shift names *why both notes coexist in this instant* — the postponement holds the tenderness in place without letting it resolve. This is the tension-compound shape in its smallest form: an externalised hesitation (the soap dish) carrying half the register while the tenderness lives in the rinse-and-turn gesture.
+
 A single-panel beat, dread register, **genre: fantasy × horror** (fantasy world, horror intrusion), **commitment: full**, no constraint:
 
 ````
@@ -354,3 +427,5 @@ All examples obey the rules: present tense, visible/audible only, brief, fixed-w
 - **Genre + commitment + era landed in this iteration (2026-05-14).** Pool expanded from 10 → 17 genres because the v2 generator drifted to prestige-drama by default. Sub-tags added for the four genres with distinct sub-grammars. Era tint added as an orthogonal axis. Needs live test rolls to confirm: (a) the 20% hybrid rate feels right, (b) the 60/40 light-vs-full split feels right, (c) the 15% era-tint rate feels like flavour and not noise, (d) the 25% sub-tag rate feels right when parents roll, (e) light tint actually lands as light and not as drama with a prop. Adjust ratios if rolls feel skewed.
 - **Sub-tag list is short on purpose.** Only sub-genres with strong distinct visual grammar are in scope (cyberpunk, folk horror, epic/urban fantasy, screwball/dark comedy). If a new sub-tag earns a calibration example here, it can join the roll.
 - **Era pool is curated, not exhaustive.** Pre-ancient eras and very specific micro-periods (Belle Époque, Tang dynasty, etc.) aren't in the pool yet. Expand only if a session shows the existing pool is too coarse.
+- **Register shapes named (2026-05-14).** Lifted the implicit three-shape pattern (single / tip-compound / tension-compound) into explicit design notes after a live session produced "tenderness with hesitation" as an emergent tension-compound. Needs more rolls to confirm the one-third / two-thirds split feels right, and whether tension-compounds should bias toward certain genres (coming-of-age, drama, romance lean naturally tension-compound; action-adventure, thriller, survival lean naturally single).
+- **Emergence section added (2026-05-14).** The skill is now structurally self-modifying: it explicitly invites the generator to propose patterns outside the taught pool at ~1 in 6 rolls, flag them, and review them through a codify-or-discard loop. This is a bigger architectural move than the tension-compound addition. Needs sessions to confirm: (a) the 1-in-6 rate produces useful emergence without overwhelming reliability, (b) the three stretch categories (register / genre / shift) are the right ones or whether others should be added, (c) the flagging convention reads clearly in practice.
