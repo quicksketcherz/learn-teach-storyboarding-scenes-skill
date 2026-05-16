@@ -36,6 +36,13 @@ After each step, **wait for the user to say "done" / "next" / "go"** (or any equ
 
 Open with: *"Phase 2 round. Got a sequence picked, or want help choosing / trimming one?"*
 
+Offer the user's uploaded library as a browsing option:
+
+> Browse the library to pick from:
+>
+> 01-movies-features-shows-anime▪︎
+> &nbsp;&nbsp;&nbsp;&nbsp;https://www.dropbox.com/scl/fo/1g8mnw19i9022my3ovgr6/AJ3wKA6X12yGoJDj9-B0RWo?rlkey=hotcie8tfw2k1fr1cp0uh0yd6&st=z4w5r8m4&dl=0
+
 Then branch based on what they say:
 
 - **Sequence ready** → go straight to Step 1.
@@ -50,7 +57,7 @@ When the sequence is ready, move to Step 1.
 
 ## Step prompts (announce verbatim or near-verbatim)
 
-### Step 1 — Scene study. 4 min. GO.
+### Step 1 — Scene study. 4 min. GO!
 
 > Play the sequence once or twice. Find where it starts and ends — that's your frame.
 >
@@ -58,7 +65,7 @@ When the sequence is ready, move to Step 1.
 >
 > Start your 4-min timer. Say **done for next step.**
 
-### Step 2 — 1st pass — sketch 5 shots. 6 min. GO.
+### Step 2 — 1st pass — sketch 5 shots. 6 min. GO!
 
 > Identify **5 shots** first, then allocate panels to each. A shot can span multiple panels — wide establish might be 1, a 3-character beat might need 3. Aim ~30 sec per panel.
 >
@@ -74,7 +81,7 @@ When the sequence is ready, move to Step 1.
 >
 > Start your 2-min timer. Say **done for next step.**
 
-### Step 4 — 2nd pass — refine. 5 min. GO.
+### Step 4 — 2nd pass — refine. 5 min. GO!
 
 > Same shots, more resolved. Use a **fresh sheet** — don't draw on top of the 1st pass; work alongside it so you can see what you're refining against.
 >
@@ -86,7 +93,7 @@ After they say done, mention the optional **peer-to-peer glance** (~30 sec):
 
 > If you're sketching with a partner, glance at their pages now. Steal what inspires you, notice what you missed — feed it into the focus pass.
 
-### Step 5 — 3rd pass — focus. 5 min. GO.
+### Step 5 — 3rd pass — focus. 5 min. GO!
 
 > Focus pass. **Direct the eye inside every panel** — shadow, line weight, contrast.
 >
@@ -178,4 +185,4 @@ The exception is the **commentary lens suggestion** in Step 6 — that's worth t
 - Critique the user's drawings during a pass. The session method is *no feedback during work* — feedback lives in the commentary track.
 - Write the divergence, session insight, or carry-forward for them. Those are the user's reflective work. Just nudge at wrap-up.
 - Generate a Phase 3 script. If the user wants to continue from their Phase 2 panels into a directing round, hand off to the `phase3-storyboarding` (continuation mode).
-- Replace the template. The session template at `templates/phase2-session-template/phase2-session-template-v3.md` (bundled in this repo) is the master document. This skill is a session companion.
+- Replace the template. The session template at `resources/phase2-session-template/phase2-session-template-v3.md` (in the user's project directory) is the master document. This skill is a session companion.

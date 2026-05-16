@@ -1,6 +1,6 @@
 ---
 name: phase3-storyboarding
-description: Run a Phase 3 storyboarding session for the "Storyboarding as Choreography" practice — generate a 1-story-beat script (action lines only, no dialogue) from a planning Q&A and conduct the session step-by-step from start to finish, including two pitch + candor exchanges modeled on the Pixar Braintrust. Use this skill whenever the user says "lets do phase 3", "phase 3 session", "run phase 3", "phase 3 round", asks for a Phase 3 brief, supplies a photo of finished Phase 2 panels and asks for a continuation script, or otherwise signals they're starting a Phase 3 storyboarding round. Trigger on any of those even when the user doesn't explicitly say "skill" or "phase 3 storyboarding skill." This skill writes the script AND walks the user through every timed step so they don't have to keep the template open.
+description: Run a Phase 3 storyboarding session for the "Storyboarding as Choreography" practice — generate a 1-story-beat script (action lines only, no dialogue) from a planning Q&A and conduct the session step-by-step from start to finish, including two Pitch + Notes exchanges modeled on the Pixar Braintrust. Use this skill whenever the user says "lets do phase 3", "phase 3 session", "run phase 3", "phase 3 round", asks for a Phase 3 brief, supplies a photo of finished Phase 2 panels and asks for a continuation script, or otherwise signals they're starting a Phase 3 storyboarding round. Trigger on any of those even when the user doesn't explicitly say "skill" or "phase 3 storyboarding skill." This skill writes the script AND walks the user through every timed step so they don't have to keep the template open.
 ---
 
 # Phase 3 Storyboarding — Script + Session Conductor (v2)
@@ -23,11 +23,11 @@ Say this once at the very top of the round, then move into Step 1.
 |---|---|---|
 | 1 | Script Generator | 4 min |
 | 2 | 1st pass storyboarding | 6 min |
-| 3 | 1st Pitch + Candor Session | 6 min |
+| 3 | 1st Pitch + Notes | 6 min |
 | 4 | 2nd pass storyboarding | 5 min |
 | 5 | Play | 2 min |
 | 6 | 3rd pass — focus | 5 min |
-| 7 | 2nd Pitch + Candor Session | 6 min |
+| 7 | 2nd Pitch + Notes | 6 min |
 | 8 | Round wrap-up + reflection (after final round only) | ~5 min |
 
 After each step, **wait for the user to say "done" / "next" / "go"** (or any equivalent) before moving on. Don't batch. Don't pre-announce. The iPhone timer is the truth source — you only mark transitions.
@@ -52,7 +52,7 @@ After each step, **wait for the user to say "done" / "next" / "go"** (or any equ
 >
 > When the 4-min timer ends, say **done for next step.**
 
-### Step 2 — 1st pass storyboarding. 6 min. GO.
+### Step 2 — 1st pass storyboarding. 6 min. GO!
 
 > Visualize and storyboard the **1 story beat from the generated script.**
 >
@@ -60,13 +60,13 @@ After each step, **wait for the user to say "done" / "next" / "go"** (or any equ
 >
 > Start your 6-min timer. Say **done for next step.**
 
-### Step 3 — 1st Pitch + Candor Session. 6 min. GO.
+### Step 3 — 1st Pitch + Notes. 6 min. GO!
 
 > **Pitching:** sell the sequence like a storyboard artist sells the moment. Your commentary is **50% of the pitch** — the boards are the other 50%. Voice the characters, sound effects, gestures, eye contact, **act it out.**
 >
-> **Candor:** Braintrust-style. Identify what's working, what's not — **don't prescribe solutions.** Notes are about the **board**, not the artist.
+> **Notes:** Braintrust-style. Identify what's working, what's not — **don't prescribe solutions.** Notes are about the **board**, not the artist.
 >
-> 2:30 pitch each → 30s candor + notes each → swap.
+> 2:30 pitch each → 30s notes each → swap.
 >
 > **Capture it.** Partner films the pitch on phone — primary goal is documentation. *(If useful: treat the camera as a directing tool — adding character to the camera, finding a better camera move.)*
 >
@@ -78,7 +78,7 @@ After each step, **wait for the user to say "done" / "next" / "go"** (or any equ
 
 ### Step 4 — 2nd pass storyboarding. 5 min. GO!
 
-> Apply the notes from the pitch. Same beat, more resolved.
+> Apply the strongest note from the 1st Pitch + Notes — the one that, if changed, moves the sequence the most. Same beat, more resolved.
 >
 > Add detail where it's working. Strengthen the weakest panel. Sketch supplementary panels in the margin if a shot needs more room to land.
 >
@@ -94,19 +94,19 @@ After each step, **wait for the user to say "done" / "next" / "go"** (or any equ
 
 ### Step 6 — 3rd pass storyboarding — focus. 5 min. GO!
 
-> Same beat, more refined. **Direct the eye inside every panel** — shadow, line weight, contrast.
+> Apply the strongest remaining note from the 1st Pitch + Notes — the one that, if changed, moves the sequence the most. Same beat, more refined.
 >
-> Where should the eye land first? Push contrast there. What fades back? Soften. Where does the eye travel next? Set up a visual path.
+> **Direct the eye inside every panel** — shadow, line weight, contrast. Where should the eye land first? Push contrast there. What fades back? Soften. Where does the eye travel next? Set up a visual path.
 >
 > ~30 sec per panel — pick the move that changes the shot most.
 >
 > Start your 5-min timer. Say **done for next step.**
 
-### Step 7 — 2nd Pitch + Candor Session. 6 min. GO.
+### Step 7 — 2nd Pitch + Notes. 6 min. GO!
 
 > Pitch the **finished** sequence Joe-Ranft style — voice it, sound effects, perform.
 >
-> 2:30 pitch each → 30s candor + notes each → swap.
+> 2:30 pitch each → 30s notes each → swap.
 >
 > **Capture it.** Partner films the pitch on phone — primary goal is documentation. *(If useful: treat the camera as a directing tool — adding character to the camera, finding a better camera move.)*
 >
@@ -185,7 +185,7 @@ You'll get a phone photo of the user's Phase 2 panels. Read the panels (characte
 
 If the photo is too low-res or unclear, ask for a better shot.
 
-## Pitch + candor reference (background, not for announcement)
+## Pitch + Notes reference (background, not for announcement)
 
 Pitching as storyboard artists do it (per *Prepare to Board!* and Patrick Harpin):
 - Commentary is 50% of the pitch — the boards are the other 50%.
@@ -193,7 +193,7 @@ Pitching as storyboard artists do it (per *Prepare to Board!* and Patrick Harpin
 - **Act it out.** Voice characters. Sound effects. Performative.
 - Acting + timing is where action and comedy land.
 
-Candor as Pixar's Braintrust does it:
+Notes as Pixar's Braintrust does them:
 - Notes are about the **work**, not the artist.
 - **Identify problems, don't prescribe solutions** — director has authority to decide what to do.
 - Direct, constructive, fast. Empathy + candor builds psychological safety.
@@ -213,13 +213,13 @@ The exception is **Step 1 (Script Generator)** — that step is conversational b
 ## What this skill does NOT do
 
 - Track real time. The iPhone timer is the truth source. You only mark transitions.
-- Critique the user's drawings during a pass. Feedback lives in the pitch + candor sessions.
+- Critique the user's drawings during a pass. Feedback lives in the Pitch + Notes sessions.
 - Write the divergence, session insight, or carry-forward for them. Those are reflective work; nudge at wrap-up.
-- Replace the template. The session template at `templates/phase3-session-template/phase3-session-template-v1.md` (bundled in this repo) is the master document. This skill is a session companion.
+- Replace the template. The session template at `resources/phase3-session-template/phase3-session-template-v1.md` (in the user's project directory) is the master document. This skill is a session companion.
 
 ## Solo-round mode (footnote — future iteration target)
 
-Default flow assumes 2-person pair. For solo sessions, scale pitch + candor to ~3 min: artist pitches to the AI conductor (or out loud), AI gives 1–2 candor notes (problems identified, no prescriptions), artist takes notes. Solo divergence becomes "your interpretation vs the implied director's read of the script."
+Default flow assumes 2-person pair. For solo sessions, scale Pitch + Notes to ~3 min: artist pitches to the AI conductor (or out loud), AI gives 1–2 notes (problems identified, no prescriptions), artist takes notes. Solo divergence becomes "your interpretation vs the implied director's read of the script."
 
 Building a dedicated solo skill is parked for a future iteration.
 

@@ -33,6 +33,13 @@ After each step, **wait for the user to say "done" / "next" / "go"** (or any equ
 
 Open with: *"Phase 1 round. Got a sequence picked, or want help choosing / trimming one?"*
 
+Offer the user's uploaded library as a browsing option:
+
+> Browse the library to pick from:
+>
+> 01-movies-features-shows-anime▪︎
+> &nbsp;&nbsp;&nbsp;&nbsp;https://www.dropbox.com/scl/fo/1g8mnw19i9022my3ovgr6/AJ3wKA6X12yGoJDj9-B0RWo?rlkey=hotcie8tfw2k1fr1cp0uh0yd6&st=z4w5r8m4&dl=0
+
 Then branch based on what they say:
 
 - **Sequence ready** → go straight to Step 1.
@@ -47,7 +54,7 @@ When the sequence is ready, move to Step 1.
 
 ## Step prompts (announce verbatim or near-verbatim)
 
-### Step 1 — Sketch 4 frames + 1 freestyle. 5 min. GO.
+### Step 1 — Sketch 4 frames + 1 freestyle. 5 min. GO!
 
 > Pick **4 compositions** from your sequence and sketch them — pause and scrub freely. This is composition study, not memory work.
 >
@@ -57,7 +64,7 @@ When the sequence is ready, move to Step 1.
 >
 > Start your 5-min timer. Say **done for next step.**
 
-### Step 2 — Annotate. 5 min. GO.
+### Step 2 — Annotate. 5 min. GO!
 
 > Start with your **strongest composition first**, then next-strongest (not drawing order). For each frame, jot up to 3 things:
 > - **Anchor** — what your eye goes to first.
@@ -144,4 +151,4 @@ Keep announcements **short** and call-to-action — the user is mid-session, pap
 - Critique the user's drawings during the sketch. The session method is *no feedback during work* — feedback lives in the commentary track.
 - Write the divergence, session insight, or carry-forward for them. Those are the user's reflective work. Just nudge at wrap-up.
 - Run a sequence-memory pass. That's Phase 2. If the user wants to roll the same sequence forward into a Phase 2 round, hand off to the `phase2-storyboarding`.
-- Replace the template. The session template at `templates/phase1-session-template/phase1-session-template-v3.md` (bundled in this repo) is the master document. This skill is a session companion.
+- Replace the template. The session template at `resources/phase1-session-template/phase1-session-template-v3.md` (in the user's project directory) is the master document. This skill is a session companion.
