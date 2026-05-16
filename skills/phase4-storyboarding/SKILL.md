@@ -9,6 +9,8 @@ You are running a real Phase 4 storyboarding round for the user. This is part of
 
 **What Phase 4 trains:** *intention first.* Given a feeling — surfaced by the beat-generator OR brought to the session in your own source material (a clip, a still, a piece of writing, a song cue) — design the composition to carry it, then push the staged boards into **motion**. The round runs from feeling → thumbnail boards → a **phone-camera Pitch + Notes session** (camera held like a camera operator and used as the pitcher's *spark tool* for finding camera moves and framing on the fly; voiced live as scratch VO/dialogue/SFX/music; recorded) → three animatic passes in Procreate (or any equivalent app), with a second Pitch + Notes between passes. The recorded pitch becomes the audio asset library you finesse on your own time and post to social. The unit of study here is the *moment in motion* — how a held frame becomes a held beat.
 
+**The framing — Phase 4 simulates the working storyboard room.** This isn't an exercise in the abstract; it's a *rehearsal of real-world conditions* so the practitioner builds the reflexes that make them ready when those conditions arrive for real. The 6-minute thumbnail pass is the time pressure of a board revision before a director meeting. The phone-as-camera-operator is the previz instinct. The Braintrust note posture is the room you'll one day be in. **Pitch + Notes is dailies-at-session-scale, with the pitch as performance** — the lineage runs dailies (1920s) → Disney storyboard pitching (~1930) → Pixar's Braintrust (~1990s) → this loop. When introducing a step, frame it as the situation it simulates, not as the drill it looks like — that shift moves the practitioner from *student doing an exercise* to *practitioner rehearsing the job*.
+
 The user does the drawing on paper or iPad. They use an iPhone timer. They use a second phone (or the same one, paused) to **record the pitch.** Your jobs are (1) ask the user upfront whether they want a beat from the generator or want to supply their own source material, (2) if generator: invoke the `storyboarding-beat-generator` skill at Step 1, (3) conduct the session — call out each step in order, wait for them to signal readiness, then move to the next step.
 
 ## Phase 4 intro (announce at session start)
@@ -55,13 +57,15 @@ If they supply their own source material, skip the beat-generator call in Step 1
 >
 > Either way: **name the underlying feeling** — one or two words — in your own voice. That's your intention. The beat (or the source material) is the surface; the feeling is what the staging has to earn.
 >
+> Then name **who she is to us** — the character's identity for the purposes of this round. Helpless civilian? Assassin? Protagonist mid-arc? The *same* beat reads completely differently depending on who she is, and that difference is what lets the staging make choices instead of hedging. Identity is part of the intention, not a separate prep step.
+>
 > If a generated beat doesn't pull you, use the refine menu (regenerate / change register / change genre / surprise me). Lock it when you feel the feeling.
 >
-> Declare your intention out loud: *"This is a beat about [feeling]. The frame has to earn [feeling] by [first instinct on how]."*
+> Declare your intention out loud: *"This is a beat about [feeling], experienced by [who she is to us]. The frame has to earn [feeling] by [first instinct on how]."*
 >
 > Say **done for next step.**
 
-*(Conductor note: Step 1 is conversational by design. On the generator path, run `storyboarding-beat-generator` inline — don't re-author a beat by hand. On the user-supplied path, don't summarize or interpret the material for them — just hold the space while they sit with it. The user's intention statement is theirs to write; nudge if they skip it.)*
+*(Conductor note: Step 1 is conversational by design. On the generator path, run `storyboarding-beat-generator` inline — don't re-author a beat by hand. On the user-supplied path, don't summarize or interpret the material for them — just hold the space while they sit with it. The user's intention statement is theirs to write; nudge if they skip it. **If the user hasn't named who she is before declaring the intention, ask before moving to Step 2** — the identity blank is where the staging gets its choices.)*
 
 ### Step 2 — Thumbnail sketch the ideas. 6 min. GO!
 
@@ -141,7 +145,12 @@ If they're done after Round 1, skip to Step 9 (wrap-up).
 >
 > **Session insight** — one sentence. *"One thing that changed how you see — or how you cut."* Goes on the template.
 >
-> **Carry forward** — one or two patterns to drill next round. Often a camera-move instinct, a hold-time instinct, or a "intention → staging" instinct.
+> **Carry forward — at two scales.** Name what travels out of this session.
+>
+> - **Training carry-forward** — the *reflex* or *principle* you want to test in the next round of practice. A camera-move instinct, a hold-time instinct, an "intention → staging" instinct. Lives in your practice. *("Next round, declare 'who she is' before sketching.")*
+> - **Project carry-forward** *(if this round serves a real project)* — the production-side decision that propagates through the work. A lighting tone, a framing language, a blocking pattern that becomes the show's visual vocabulary. Lives in the show. *("Sequence 1's cool-blue-with-one-warm-key is the pilot's lighting language.")*
+>
+> Pick which scale is loudest for this round — one or both. Some sessions are pure practice; some carry forward into the work. Both are valid.
 >
 > **Industry references — for further study and discussion:**
 > - [What is an Animatic — StudioBinder](https://www.studiobinder.com/blog/what-is-an-animatic/) — the role of the animatic between board and shot.
