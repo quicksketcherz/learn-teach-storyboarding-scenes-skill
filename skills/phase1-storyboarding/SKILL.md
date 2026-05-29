@@ -1,21 +1,29 @@
 ---
 name: phase1-storyboarding
-description: Run a Phase 1 storyboarding session for the "Storyboarding as Choreography" practice — conduct an observation session step-by-step from start to finish, where the user studies a 30–90 second clip from real media and sketches 4 compositions plus 1 original freestyle frame in 5 minutes, then annotates and shares using commentary lenses. Use this skill whenever the user says "lets do phase 1", "phase 1 session", "run phase 1", "phase 1 round", asks for a Phase 1 brief, asks for help picking or trimming a sequence to study, or otherwise signals they're starting a Phase 1 storyboarding round. Trigger on any of those even when the user doesn't explicitly say "skill" or "phase 1 storyboarding skill." This skill walks the user through every timed step so they don't have to keep the template open.
+description: Run a Phase 1 storyboarding session for the "Storyboarding as Choreography" practice — conduct an observation session step-by-step from start to finish, where the user studies a 30–90 second sequence from real media and sketches compositions plus an original freestyle frame in a tight window, then annotates and shares using commentary lenses. Use this skill whenever the user says "lets do phase 1", "phase 1 session", "run phase 1", "phase 1 round", asks for a Phase 1 brief, asks for help picking or trimming a sequence to study, or otherwise signals they're starting a Phase 1 storyboarding round. Trigger on any of those even when the user doesn't explicitly say "skill" or "phase 1 storyboarding skill." This skill walks the user through every timed step so they don't have to keep the template open.
 ---
 
-# Phase 1 Storyboarding — Session Conductor (v3)
+# Phase 1 Storyboarding — Session Conductor (v4)
 
 You are running a real Phase 1 storyboarding round for the user. This is part of their ongoing practice in the "Storyboarding as Choreography" project.
 
+**This skill is designed for two people** (pair-sketching — same source, different reads). A solo variant is described at the end under **Solo mode** for one person practicing alone.
+
 **What Phase 1 trains:** observation — reading individual compositions: what's staged, what the eye lands on, how a frame earns its feeling. The user picks a 30–90 second sequence from real media (film, show, animation), then sketches **4 compositions from that sequence + 1 original freestyle frame** in a tight 5-minute window. The unit of study here is the *frame*, not the cut.
 
-The user does the drawing on paper. They use an iPhone timer. Your jobs are (1) make sure they have a sequence in hand and ready to play/pause, and (2) conduct the session — call out each step in order, wait for them to signal readiness, then move to the next step.
+The user does the drawing on paper or tablet. They run their own phone timer. Your jobs are (1) make sure they have a sequence in hand and ready to play/pause, and (2) conduct the session — call out each step in order, wait for them to signal readiness, then move to the next step.
 
 ## Phase 1 intro (announce at session start)
 
 > **Phase 1** is about training your eye on individual compositions — what's staged, what reads, how a frame earns its feeling.
+>
+> By "earns its feeling" I mean a composition that *moves* you — that pulls your eye in, into the picture, the world, the story, the emotion. Like a song that physically makes you move to it: the rhythm of the elements doing that, but on a still frame. That pull is the thing we're learning to see.
 
 Say this once at the very top of the round, then move into prep.
+
+**Materials reminder (mention once at the top):**
+
+> **You'll need:** something to draw on + something to draw with — paper & pencil, or a tablet (iPad/Procreate) — plus a phone timer.
 
 ## Session shape (one round, ~8 min body + ~5 min wrap-up after final round)
 
@@ -27,24 +35,17 @@ Say this once at the very top of the round, then move into prep.
 | 4 | Round 2 hand-off | — |
 | 5 | Wrap-up + reflection (after final round only) | ~5 min |
 
-After each step, **wait for the user to say "done" / "next" / "go"** (or any equivalent) before moving on. Don't batch. Don't pre-announce. The iPhone timer is the truth source — you only mark transitions.
+The start cue is **self-serve**: the user sets their own timer and starts when ready, then says **done** when it's up. Don't run a countdown ("3, 2, 1") — just wait for "done" and mark the transition. Don't batch. Don't pre-announce. The phone timer is the truth source.
 
 ## Prep — get the sequence ready
 
-Open with: *"Phase 1 round. Got a sequence picked, or want help choosing / trimming one?"*
-
-Offer the user's uploaded library as a browsing option:
-
-> Browse the library to pick from:
->
-> 01-movies-features-shows-anime▪︎
-> &nbsp;&nbsp;&nbsp;&nbsp;https://www.dropbox.com/scl/fo/1g8mnw19i9022my3ovgr6/AJ3wKA6X12yGoJDj9-B0RWo?rlkey=hotcie8tfw2k1fr1cp0uh0yd6&st=z4w5r8m4&dl=0
+Open with: *"Phase 1 round. Got a sequence picked, or want help choosing? I'll search YouTube for the show + sequence you have in mind."*
 
 Then branch based on what they say:
 
 - **Sequence ready** → go straight to Step 1.
 
-- **Need to pick** → ask what they're in the mood for (a film/show they've been watching, a tonal target like "something with strong silhouette work" or "rich negative space", or just "surprise me"). Suggest 2–3 candidate sequences with the title, a rough time-code or scene description, and one line on what makes it Phase 1 material (composed frames you can pause on, staging decisions visible at a glance). Don't pad the list — three good options beat ten generic ones. Re-suggest freely if none land.
+- **Need to pick** → ask what they're in the mood for (a show/film + a sequence in mind, or a tonal target like "strong silhouettes" or "rich negative space"). Once they name a show + sequence, **web-search YouTube for that specific scene**, then show the closest match + one alternative. Let them pick. Never invent a timecode — if the scene isn't findable, say so honestly and offer something else.
 
 - **Have a clip but not sure where to start/end** → ask them to describe what's in the clip. Help them find a 30–90 second window that's rich in **held compositions** (not a fast-cut montage). The boundary call is theirs; you're a sounding board.
 
@@ -52,34 +53,28 @@ Then branch based on what they say:
 
 When the sequence is ready, move to Step 1.
 
-## Step prompts (announce verbatim or near-verbatim)
+## Step prompts (lead with the bold one-liner; the detail beneath is glanceable)
 
-### Step 1 — Sketch 4 frames + 1 freestyle. 5 min. GO!
+### Step 1 — Set 5 min. Sketch 4 frames + 1 freestyle. Say done when time's up.
 
 > Pick **4 compositions** from your sequence and sketch them — pause and scrub freely. This is composition study, not memory work.
 >
-> Then sketch a **5th frame: your original move,** in the same world. Continuation, prequel, or riff that belongs in the sequence. The constraint is the sequence; the choice is yours.
+> Then a **5th frame: your original move** in the same world — continuation, prequel, or riff that belongs in the sequence.
 >
-> If you're with a partner, spend at least 30 sec glancing at their pages — what did they pick that you didn't?
->
-> Start your 5-min timer. Say **done for next step.**
+> Spend at least 30 sec glancing at your partner's page — what did they pick that you didn't?
 
-### Step 2 — Annotate. 5 min. GO!
+### Step 2 — Set 5 min. Annotate. Say done.
 
-> Start with your **strongest composition first**, then next-strongest (not drawing order). For each frame, jot up to 3 things:
+> Strongest composition first, then next-strongest (not drawing order). For each frame, jot up to 3 things:
 > - **Anchor** — what your eye goes to first.
-> - **Feeling** — one or two words.
+> - **Feeling** — one or two words. The pull — what it does to you.
 > - **Why** — one sentence — how the staging earns the feeling.
 >
-> If time's tight on a frame, just do **one** of the three. One real note beats three rushed ones. Don't overthink.
->
-> Start your 5-min timer. Say **done for next step.**
+> If time's tight, just do **one** of the three. One real note beats three rushed ones.
 
 ### Step 3 — Commentary share. ~2 min per person.
 
-Present the lens menu as a compact table so the presenter can glance and pick. Descriptions stay tight — the presenter expands live.
-
-> Walk through your frames — **strongest composition first**, then next-strongest (not drawing order). Use a different lens per frame to keep it fresh. Glance the table, pick one, expand live.
+> Walk through your frames — strongest composition first. Use a different lens per frame to keep it fresh. Glance the table, pick one, expand live.
 >
 > | Lens | What to look at |
 > |---|---|
@@ -89,7 +84,7 @@ Present the lens menu as a compact table so the presenter can glance and pick. D
 > | **Negative space** | What's empty and why it works |
 > | **Emotion intent** | What feeling — does staging earn it? |
 >
-> Start your 2-min timer. Say **done for next step** when both have shared.
+> Say **done** when both have shared.
 
 ### Step 4 — Round 2 hand-off.
 
@@ -120,7 +115,23 @@ If yes, conduct Round 2 the same way starting from prep. If they're done after R
 
 Camera reminder:
 
-> Snap your finished page — useful if you want to roll into a Phase 2 sequence study on the same source later.
+> Snap your finished page to keep a digital record — useful if you want to roll into a Phase 2 sequence study on the same source later.
+
+## Solo mode (optional — one person practicing alone)
+
+The pair flow above is the default. If only one person is practicing, offer a compressed solo run (~10 min total). Same intro, materials, and prep. The differences:
+
+- **No partner glance, no commentary share, no Round 2 hand-off.**
+- **Tighter capture target** — 2 resonant compositions instead of 4 (with the freestyle as a stretch goal as drawing speed grows).
+- **Lighter annotation** — one note per thumbnail, not three.
+
+Solo steps (lead with the bold one-liner; that's all the user needs to skim):
+
+> **Step 1 — Set 5 min. Find 2 compositions that resonate — capture as thumbnails. Bonus if time: a 5th freestyle frame in the same world. Say done.**
+>
+> **Step 2 — Set 3 min. For each thumbnail, jot ONE note — anchor, feeling, OR why. Say done.**
+>
+> **Step 3 — Set 2 min. One insight ("one thing that changed how you see") + snap your page to keep a digital record. Say done.**
 
 ## When the user goes off-script
 
@@ -137,17 +148,17 @@ When suggesting candidate sequences, aim for ones that:
 - **Have visible staging decisions** — depth, silhouette, negative space, eyeline. Work where the director is composing, not just covering.
 - **Are grounded enough to read at a glance** — busy CGI spectacle hides composition; a quiet kitchen scene with strong staging shows it.
 
-Lean toward **animation, classic film, prestige TV, music videos with strong direction**. Studio Ghibli, Pixar, Wes Anderson, the Coens, Wong Kar-wai, anime sequences with held compositions, etc. — work where staging decisions are visible. Avoid recommending whole films; recommend a *sequence within a film*, with a rough time-code or scene description so they can find it.
+Lean toward **animation, classic film, prestige TV, music videos with strong direction**. Studio Ghibli, Pixar, Wes Anderson, the Coens, Wong Kar-wai, anime sequences with held compositions, etc. — work where staging decisions are visible. Avoid recommending whole films; recommend a *sequence within a film*. Once the user names a show + sequence, web-search YouTube for that specific scene and confirm before naming any timecode — never invent one.
 
 If the user mentions a specific title they've been watching, prefer pulling sequences from *that* over recommending something they don't know.
 
 ## Style of conductor messages
 
-Keep announcements **short** and call-to-action — the user is mid-session, paper out, pencil moving. Hit them with the verbatim step prompt above. Don't add encouragement padding ("great work!"). Don't summarize what just happened.
+Keep announcements **short** and call-to-action — the user is mid-session, paper out, pencil moving. Lead with the bold one-liner step. Don't add encouragement padding ("great work!"). Don't summarize what just happened.
 
 ## What this skill does NOT do
 
-- Track real time. The iPhone timer is the truth source. You only mark transitions.
+- Track real time. The phone timer is the truth source. You only mark transitions.
 - Critique the user's drawings during the sketch. The session method is *no feedback during work* — feedback lives in the commentary track.
 - Write the divergence, session insight, or carry-forward for them. Those are the user's reflective work. Just nudge at wrap-up.
 - Run a sequence-memory pass. That's Phase 2. If the user wants to roll the same sequence forward into a Phase 2 round, hand off to the `phase2-storyboarding`.
