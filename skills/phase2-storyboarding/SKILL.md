@@ -21,8 +21,8 @@ Say this once at the very top of the round, then move into prep.
 
 | # | Step | Time |
 |---|------|------|
-| 1 | Scene study | 4 min |
-| 2 | 1st pass — sketch 5 shots | 6 min |
+| 1 | Sequence study | 4 min |
+| 2 | 1st pass — sketch the sequence | 6 min |
 | 3 | Catch your breath | 2 min |
 | 4 | 2nd pass — refine | 5 min |
 | 5 | 3rd pass — focus | 5 min |
@@ -57,17 +57,29 @@ When the sequence is ready, move to Step 1.
 
 ## Step prompts (announce verbatim or near-verbatim)
 
-### Step 1 — Scene study. 4 min. GO!
+### Step 1 — Sequence study. 4 min. GO!
 
-> Play the sequence once or twice. Find where it starts and ends — that's your frame.
+> Watch the sequence. In each shot, look at:
 >
-> Shout out what resonates and why; pile on, don't take turns. Remember the shots through **emotion, not detail** — memorize the composition, not the content.
+> - **Focal point** — what your eye goes to first
+> - **Staging** — where figures and objects sit in the frame
+> - **Depth** — FG / MG / BG separation
 >
-> Start your 4-min timer. Say **done for next step.**
+> Then across the cuts:
+>
+> - **Continuity** — how the focal point carries shot to shot
+> - **Screen direction** — left/right movement holding (or breaking)
+> - **Pacing** — how long each shot holds
+>
+> Remember through **emotion, not detail** — the checklist is a lens, not a scorecard. Feel first, analyze second.
+>
+> Take quick thumbnail notes.
+>
+> Say **show me a sequence breakdown** if you want an example, or **done for next step** when you're ready. Start your 4-min timer.
 
-### Step 2 — 1st pass — sketch 5 shots. 6 min. GO!
+### Step 2 — 1st pass — sketch the sequence. 6 min. GO!
 
-> Identify **5 shots** first, then allocate panels to each. A shot can span multiple panels — wide establish might be 1, a 3-character beat might need 3. Aim ~30 sec per panel.
+> Draw the sequential flow — as many panels as you need to capture how the shots connect. A shot can span multiple panels; a quick cut might be one.
 >
 > Rough is right; you're **reverse-engineering, not illustrating.**
 >
@@ -162,14 +174,24 @@ If the user just stops responding for a while, don't keep prompting. They may be
 
 ## Sequence-suggestion guidance (when asked)
 
-When suggesting candidate sequences, aim for ones that:
+**Picking workflow:**
+
+1. Suggest 2–3 candidates from genuine cultural reputation.
+2. User picks one.
+3. **Web-search for a YouTube version of that specific scene.**
+4. If YouTube has it → give the link.
+5. If YouTube doesn't have it → say so honestly, then either suggest a similar-energy alternative that IS on YouTube, or point to where the official version lives.
+
+**Do not give fake-precise timestamps.** If you don't actually know where in a film a sequence sits, say "roughly" or let the user find their own in-point. Confident-sounding numbers with no source are worse than honest approximation.
+
+**What makes a good Phase 2 sequence:**
 
 - **Run 30–90 seconds** — short enough to hold in memory after one watch.
 - **Have ~5 shots' worth of cutting** — not a single oner, not a chaotic 30-cut montage. The artist should have a real allocation problem.
 - **Have a clear through-line** — something changes from start to end (proximity, attention, who's in frame, emotional state). The change is what they're learning to read.
 - **Are grounded enough to draw from memory** — busy CGI spectacle is hard to memorize compositionally; a quiet kitchen scene with strong staging is easier.
 
-Lean toward **animation, classic film, prestige TV, music videos with strong direction**. Studio Ghibli, Pixar, Wes Anderson, the Coens, Wong Kar-wai, anime sequences with held compositions, etc. — work where staging decisions are visible. Avoid recommending whole films; recommend a *sequence within a film*, with a rough time-code or scene description so they can find it.
+Lean toward **animation, classic film, prestige TV, music videos with strong direction**. Studio Ghibli, Pixar, Wes Anderson, the Coens, Wong Kar-wai, anime sequences with held compositions, etc. — work where staging decisions are visible. Avoid recommending whole films; recommend a *sequence within a film*, with a scene description so they can find it.
 
 If the user mentions a specific title they've been watching, prefer pulling sequences from *that* over recommending something they don't know.
 
