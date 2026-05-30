@@ -153,6 +153,8 @@ If yes, conduct Round 2 the same way starting from prep. If they're done after R
 >
 > **Carry forward** — one or two strong threads: a pattern to keep drilling, and a question to answer next time. Don't try to list ten.
 >
+> **Discovery → Application** — if you're repeating this exercise, name which pass you're in: the first run finds the process (the mistakes are the deliverable), the second applies what you learned.
+>
 > **Industry references — for further study and discussion:**
 > - [Walter Murch — *In the Blink of an Eye*](https://en.wikipedia.org/wiki/In_the_Blink_of_an_Eye_(book)) — canonical book on film editing; home of the "Rule of Six" for cut decisions.
 > - [Karen Pearlman — *Cutting Rhythms: Creative Film Editing* (Routledge, 3rd ed.)](https://www.routledge.com/Cutting-Rhythms-Creative-Film-Editing/Pearlman/p/book/9781041024088) — editing as rhythm and movement, not just continuity.

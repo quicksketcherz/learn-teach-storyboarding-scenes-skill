@@ -208,6 +208,8 @@ If they're done after Round 1, skip to Step 9 (wrap-up).
 >
 > Pick which scale is loudest for this round — one, two, or all three. Some sessions are pure practice; some surface skill iterations; some carry forward into the work. All are valid.
 >
+> **Discovery → Application** — if you're repeating this exercise, name which pass you're in: the first run finds the process (the mistakes are the deliverable — the same way a first-time-with-the-tool round is partly tool onboarding), the second applies what you learned.
+>
 > **Session log hand-off (SLC integration).** If skill-iteration carry-forwards surfaced, name them now and offer to file a session log via the **`session-log-companion`** skill — the round produced documentation work that the log captures properly. (The log is a separate workflow that *follows* Step 9; don't skip Step 8 or Step 9 to write the log mid-round. If the user requests a log mid-flow, ask: *"Do you want to close out the round first — Step 8 hand-off + Step 9 wrap-up — and then file the log, or skip straight to the log?"*)
 >
 > **Industry references — for further study and discussion:**

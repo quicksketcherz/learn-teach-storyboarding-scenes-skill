@@ -104,6 +104,8 @@ If yes, conduct Round 2 the same way starting from prep. If they're done after R
 >
 > **Carry forward** — one or two patterns to drill next round.
 >
+> **Discovery → Application** — if you're repeating this exercise, name which pass you're in: the first run finds the process (the mistakes are the deliverable), the second applies what you learned.
+>
 > **Industry references — for further study and discussion:**
 > - [Framed Ink — Marcos Mateu-Mestre (Design Studio Press)](https://designstudiopress.com/products/framed-ink) — canonical book on composition for visual storytelling.
 > - [How to Draw for Storyboarding — Floobynooby](http://www.floobynooby.com/comp1.html) — free composition primer used by many storyboard artists.

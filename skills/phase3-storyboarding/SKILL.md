@@ -124,6 +124,8 @@ After each step, **wait for the user to say "done" / "next" / "go"** (or any equ
 >
 > **Carry forward** — one or two patterns to drill next round.
 >
+> **Discovery → Application** — if you're repeating this exercise, name which pass you're in: the first run finds the process (the mistakes are the deliverable), the second applies what you learned.
+>
 > **Industry references — for further study and discussion:**
 > - [What is a Story Beat — Celtx](https://blog.celtx.com/what-is-a-story-beat/)
 > - [Develop Story Beats in Your Screenplay — MovieMaker](https://www.moviemaker.com/how-to-develop-story-beats-screenplay-screenwriting/)
