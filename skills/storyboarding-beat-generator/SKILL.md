@@ -178,6 +178,12 @@ Tension-compounds are often the most sketchable of the three, because they force
 
 Roll across all three. Tip-compounds and tension-compounds together should account for roughly a third of rolls; singles the rest.
 
+**Emergent registers observed 2026-06-14 (not yet promoted to taught):**
+- *quiet wonder with old grief* — used for a Mushoku Tensei boy-and-ant beat. Worked well for second-life weight applied to small physical moments.
+- *courage arriving late* — used for a Mushoku Tensei village-square beat. Body-leads-mind framing. Possible candidate for a new beat *category* (see exploratory note below).
+
+These need 2–3 more rolls each before promoting to taught registers per the *emergent vs taught patterns* framework (`workflow-knowledge-logs/2026-05-14-2143-Emergent-vs-Taught-Patterns.md`).
+
 ## The refine menu (post-generation)
 
 After every generation, surface a menu via the input UI. The menu is **conditional** — options only appear when they make sense given current state:
@@ -205,6 +211,22 @@ After every generation, surface a menu via the input UI. The menu is **condition
 - Show reference lineage *(also re-emitted inline with the beat)*
 
 **"Surprise me" should always be an option** wherever the user is making a choice (register, constraint, panel count). Don't omit it.
+
+## Output: pin as side-panel artifact (optional)
+
+Once the user locks a beat, offer to pin it as a side-panel artifact for the session:
+
+> *"Want me to pin this as a side-panel artifact so it stays visible while you work?"*
+
+If yes, generate a markdown artifact containing:
+- The beat script (the prose block)
+- The shift line
+- The rolled defaults (scale, register, genre, era tint, commitment)
+- A blank "Round framing" section the calling skill can fill in (carry-forward notes, source, etc.)
+
+This keeps the beat script as the session's anchor instead of letting it disappear into chat scroll-back.
+
+**When the caller is `phase4-storyboarding`:** this is not optional — auto-pin without asking. Phase 4 has built that into Prep. See `phase4-storyboarding/SKILL.md` Prep section.
 
 ## What to hold back by default
 
