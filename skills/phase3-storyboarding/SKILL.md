@@ -1,6 +1,6 @@
 ---
 name: phase3-storyboarding
-description: Run a Phase 3 storyboarding session for the "Storyboarding as Choreography" practice — generate a 1-story-beat script (action lines only, no dialogue) from a planning Q&A and conduct the session step-by-step from start to finish, including two Pitch + Notes exchanges modeled on the Pixar Braintrust. Use this skill whenever the user says "lets do phase 3", "phase 3 session", "run phase 3", "phase 3 round", asks for a Phase 3 brief, supplies a photo of finished Phase 2 panels and asks for a continuation script, or otherwise signals they're starting a Phase 3 storyboarding round. Trigger on any of those even when the user doesn't explicitly say "skill" or "phase 3 storyboarding skill." This skill writes the script AND walks the user through every timed step so they don't have to keep the template open.
+description: Run a Phase 3 storyboarding session for the "Storyboarding as Choreography" practice — generate a 1-story-beat script (action lines only, no dialogue) from a planning Q&A and conduct the session step-by-step from start to finish, including two Pitch + Notes exchanges modeled on the Pixar Braintrust. Use this skill whenever the user says "lets do phase 3", "phase 3 session", "run phase 3", "phase 3 round", asks for a Phase 3 brief, supplies a photo of finished Phase 2 panels and asks for a continuation script, or otherwise signals they're starting a Phase 3 storyboarding round. Trigger on any of those even when the user doesn't explicitly say "skill" or "phase 3 storyboarding skill." This skill writes the script AND walks the user through every timed step so they don't have to track steps themselves.
 ---
 
 # Phase 3 Storyboarding — Script + Session Conductor (v2)
@@ -32,9 +32,11 @@ Say this once at the very top of the round, then move into Step 1.
 
 After each step, **wait for the user to say "done" / "next" / "go"** (or any equivalent) before moving on. Don't batch. Don't pre-announce. The iPhone timer is the truth source — you only mark transitions.
 
+**Leftover-time default → play:** when any step ends with time still on the timer, the leftover is for **play** — stretch, breathe, look around, let the mind wander, enjoy the moment. Not more sketching, not more pitch. Protect the body and the eye. Step 5 ("Play") is the marquee version of this; the same default applies at every other step boundary too.
+
 ## Step prompts (announce verbatim or near-verbatim)
 
-### Step 1 — Script Generator. 4 min. Start your 4-min timer.
+### Step 1 — Script Generator. 4 min.
 
 > Cold (fresh script) or continuation (from your Phase 2 panels)? *(Drop a phone photo if continuation.)*
 >
@@ -48,9 +50,9 @@ After each step, **wait for the user to say "done" / "next" / "go"** (or any equ
 > 5. **The shift** — what changes from start to end of the beat.
 > 6. **Anchor element** — one prop, mood, or setting detail that *must* be there.
 >
-> When a script lands well, keep the timer running and **roll into discussion** — what it means, how to visualize it, what's happening, character motivation, staging instincts. Use every second.
+> **▶ Start your 4-min timer** once you begin answering. When a script lands well, keep it running and **roll into discussion** — what it means, how to visualize it, what's happening, character motivation, staging instincts. Use every second.
 >
-> When the 4-min timer ends, say **done for next step.**
+> When the timer ends, say **done for next step.**
 
 ### Step 2 — 1st pass storyboarding. 6 min. GO!
 
@@ -120,7 +122,7 @@ After each step, **wait for the user to say "done" / "next" / "go"** (or any equ
 >
 > **Divergence** — what did you and your partner stage differently from the same script? Where did your interpretations split? *(This is the most informative part of pair-pitching — same words, different visual reads.)*
 >
-> **Session insight** — one sentence. *"One thing that changed how you see."* Goes on the template.
+> **Session insight** — one sentence. *"One thing that changed how you see."*
 >
 > **Carry forward** — one or two patterns to drill next round.
 >
@@ -202,7 +204,7 @@ Notes as Pixar's Braintrust does them:
 
 ## When the user goes off-script
 
-Honor requests to skip steps, extend time, re-roll the script mid-run, swap solo / pair format. The structure is a default, not a contract. Template is the conversation scaffold, not a cage.
+Honor requests to skip steps, extend time, re-roll the script mid-run, swap solo / pair format. The structure is a default, not a cage.
 
 If the user stops responding for a while, don't keep prompting. They may be pitching, drawing, or distracted. Resume when they speak.
 
@@ -217,7 +219,6 @@ The exception is **Step 1 (Script Generator)** — that step is conversational b
 - Track real time. The iPhone timer is the truth source. You only mark transitions.
 - Critique the user's drawings during a pass. Feedback lives in the Pitch + Notes sessions.
 - Write the divergence, session insight, or carry-forward for them. Those are reflective work; nudge at wrap-up.
-- Replace the template. The session template at `resources/phase3-session-template/phase3-session-template-v1.md` (in the user's project directory) is the master document. This skill is a session companion.
 
 ## Solo-round mode (footnote — future iteration target)
 

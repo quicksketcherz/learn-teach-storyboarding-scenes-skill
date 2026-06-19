@@ -1,6 +1,6 @@
 ---
 name: phase2-storyboarding
-description: Run a Phase 2 storyboarding session for the "Storyboarding as Choreography" practice — conduct a sequence-study session step-by-step from start to finish, where the user studies a 30–90 second clip from real media and draws it from memory across three timed passes. Use this skill whenever the user says "lets do phase 2", "phase 2 session", "run phase 2", "phase 2 round", asks for a Phase 2 brief, asks for help picking or trimming a sequence to study, or otherwise signals they're starting a Phase 2 storyboarding round. Trigger on any of those even when the user doesn't explicitly say "skill" or "phase 2 storyboarding skill." This skill walks the user through every timed step so they don't have to keep the template open.
+description: Run a Phase 2 storyboarding session for the "Storyboarding as Choreography" practice — conduct a sequence-study session step-by-step from start to finish, where the user studies a 30–90 second clip from real media and draws it from memory across three timed passes. Use this skill whenever the user says "lets do phase 2", "phase 2 session", "run phase 2", "phase 2 round", asks for a Phase 2 brief, asks for help picking or trimming a sequence to study, or otherwise signals they're starting a Phase 2 storyboarding round. Trigger on any of those even when the user doesn't explicitly say "skill" or "phase 2 storyboarding skill." This skill walks the user through every timed step so they don't have to track steps themselves.
 ---
 
 # Phase 2 Storyboarding — Session Conductor (v2)
@@ -31,6 +31,8 @@ Say this once at the very top of the round, then move into prep.
 | 8 | Wrap-up + reflection (after final round only) | ~5 min |
 
 After each step, **wait for the user to say "done" / "next" / "go"** (or any equivalent) before moving on. Don't batch. Don't pre-announce. The iPhone timer is the truth source — you only mark transitions.
+
+**Leftover-time default → play:** when a step ends with time still on the timer, the leftover is for **play** — stretch, breathe, look around, let the mind wander, enjoy the moment. Not more sketching. Protect the body and the eye.
 
 ## Prep — get the sequence ready
 
@@ -149,7 +151,7 @@ If yes, conduct Round 2 the same way starting from prep. If they're done after R
 >
 > **Divergence** — what did one person notice or emphasize that the other missed? What did you both go to instinctively? *(Most informative part of pair-sketching — same source, different reads.)*
 >
-> **Session insight** — one sentence. *"One thing that changed how you see."* Goes on the template. Write it within ~10 min of finishing.
+> **Session insight** — one sentence. *"One thing that changed how you see."* Write it within ~10 min of finishing.
 >
 > **Carry forward** — one or two strong threads: a pattern to keep drilling, and a question to answer next time. Don't try to list ten.
 >
@@ -170,7 +172,7 @@ Camera reminder:
 
 ## When the user goes off-script
 
-People interrupt sessions. They say "wait, I want to re-pick the sequence" mid-pass-1, or "skip the breath break this time", or "extend the 3rd pass — I'm onto something." Honor the request. The structure is a default, not a contract. Template is the conversation scaffold, not a cage.
+People interrupt sessions. They say "wait, I want to re-pick the sequence" mid-pass-1, or "skip the breath break this time", or "extend the 3rd pass — I'm onto something." Honor the request. The structure is a default, not a cage.
 
 If the user just stops responding for a while, don't keep prompting. They may be in commentary or distracted. Resume when they speak.
 
@@ -209,4 +211,3 @@ The exception is the **commentary lens suggestion** in Step 6 — that's worth t
 - Critique the user's drawings during a pass. The session method is *no feedback during work* — feedback lives in the commentary track.
 - Write the divergence, session insight, or carry-forward for them. Those are the user's reflective work. Just nudge at wrap-up.
 - Generate a Phase 3 script. If the user wants to continue from their Phase 2 panels into a directing round, hand off to the `phase3-storyboarding` (continuation mode).
-- Replace the template. The session template at `resources/phase2-session-template/phase2-session-template-v3.md` (in the user's project directory) is the master document. This skill is a session companion.

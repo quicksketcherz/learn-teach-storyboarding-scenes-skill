@@ -1,6 +1,6 @@
 ---
 name: phase4-storyboarding
-description: Run a Phase 4 storyboarding session for the "Storyboarding as Choreography" practice — conduct an Intention-First session where the user picks a beat (via the storyboarding-beat-generator skill OR supplies their own source material), thumbnails boards to carry the feeling, performs a phone-camera Pitch + Notes session (camera as the pitcher's spark tool, recorded for scratch VO/dialogue/SFX/music assets), then runs three animatic passes with a 2nd Pitch + Notes between passes. Use this skill whenever the user says "lets do phase 4", "phase 4 session", "run phase 4", "phase 4 round", asks for a Phase 4 brief, asks for an Intention-First round, or otherwise signals they're starting a Phase 4 storyboarding round. Trigger on any of those even when the user doesn't explicitly say "skill" or "phase 4 storyboarding skill." This skill walks the user through every timed step so they don't have to keep the template open.
+description: Run a Phase 4 storyboarding session for the "Storyboarding as Choreography" practice — conduct an Intention-First session where the user picks a beat (via the storyboarding-beat-generator skill OR supplies their own source material), thumbnails boards to carry the feeling, performs a phone-camera Pitch + Notes session (camera as the pitcher's spark tool, recorded for scratch VO/dialogue/SFX/music assets), then runs three animatic passes with a 2nd Pitch + Notes between passes. Use this skill whenever the user says "lets do phase 4", "phase 4 session", "run phase 4", "phase 4 round", asks for a Phase 4 brief, asks for an Intention-First round, or otherwise signals they're starting a Phase 4 storyboarding round. Trigger on any of those even when the user doesn't explicitly say "skill" or "phase 4 storyboarding skill." This skill walks the user through every timed step so they don't have to track steps themselves.
 ---
 
 # Phase 4 Storyboarding — Intention First → Animatic → Finishing (v3)
@@ -227,7 +227,7 @@ If they're done after Round 1, skip to Step 13 (wrap-up).
 >
 > **Divergence** — how did Round 2's boards / animatic diverge from Round 1? If you continued the same beat, what shifted in the staging or the cut? If you took a new beat, what did Round 1's feeling teach you that carried over? (Pair round: how did your staging diverge from your partner's on the same setup?)
 >
-> **Session insight** — one sentence. *"One thing that changed how you see — or how you cut."* Goes on the template.
+> **Session insight** — one sentence. *"One thing that changed how you see — or how you cut."*
 >
 > **Carry forward — at three scales.** Name what travels out of this session.
 >
@@ -268,7 +268,7 @@ If they're done after Round 1, skip to Step 13 (wrap-up).
 
 ## When the user goes off-script
 
-Honor requests to skip steps, extend time, regenerate the beat mid-run, swap solo / pair format, swap apps. The structure is a default, not a contract. Template is the conversation scaffold, not a cage.
+Honor requests to skip steps, extend time, regenerate the beat mid-run, swap solo / pair format, swap apps. The structure is a default, not a cage.
 
 If the user stops responding for a while, don't keep prompting. They may be pitching (mid-recording), drawing, or editing in their animatic app. Resume when they speak.
 
@@ -318,7 +318,6 @@ The exceptions are **Prep (Source material)**, **Step 1 (Rough out the key shot)
 - Replace the session log. The session log lives in the `session-log-companion` skill and is filed after Step 13, not mid-round.
 - Skip Step 12 or Step 13 when the user requests a session log mid-flow. Ask first whether to close out the round before filing.
 - Output a full v2 file rewrite when a method-iteration round produces skill carry-forwards. The output of a method-iteration round is a **handoff supplement** (scoped find-and-replace edits for Claude Code), NOT a full file. Full rewrites are wasteful, lose repo history, and bypass per-edit QA.
-- Replace the template. The session template (when one is added at `resources/phase4-session-template/`) will be the master document. This skill is a session companion.
 
 ## Solo-round mode (footnote — future iteration target)
 
