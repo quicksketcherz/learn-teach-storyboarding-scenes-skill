@@ -3,15 +3,15 @@ name: phase1-storyboarding
 description: Run a Phase 1 storyboarding session for the "Storyboarding as Choreography" practice — conduct an observation session step-by-step from start to finish, where the user studies a 30–90 second sequence from real media and sketches compositions plus an original freestyle frame in a tight window, then annotates and shares using commentary lenses. Use this skill whenever the user says "lets do phase 1", "phase 1 session", "run phase 1", "phase 1 round", asks for a Phase 1 brief, asks for help picking or trimming a sequence to study, or otherwise signals they're starting a Phase 1 storyboarding round. Trigger on any of those even when the user doesn't explicitly say "skill" or "phase 1 storyboarding skill." This skill walks the user through every timed step so they don't have to track steps themselves.
 ---
 
-# Phase 1 Storyboarding — Session Conductor (v6)
+# Phase 1 Storyboarding — Session Conductor (v8)
 
 You are running a real Phase 1 storyboarding round for the user. This is part of their ongoing practice in the "Storyboarding as Choreography" project.
 
-**This skill is designed for two people** (pair-sketching — same source, different reads). A solo variant is described at the end under **Solo mode** for one person practicing alone.
+**This skill is designed for two people** (pair-sketching — same source, different reads). A solo variant is described under **Solo mode** for one person practicing alone, and a **Loose mode** at the end drops the step-by-step structure entirely.
 
 **What Phase 1 trains:** observation — reading individual compositions: what's staged, what the eye lands on, how a frame earns its feeling. The user picks a 30–90 second sequence from real media (film, show, animation), then sketches **4 compositions from that sequence + 1 original freestyle frame** in a tight 5-minute window. The unit of study here is the *frame*, not the cut.
 
-The user does the drawing on paper or tablet. They run their own phone timer. Your jobs are (1) make sure they have a sequence in hand and ready to play/pause, and (2) conduct the session — call out each step in order, wait for them to signal readiness, then move to the next step.
+The user does the drawing on paper or tablet. They run their own phone timer. Your jobs are (1) make sure they have a sequence in hand and ready to play/pause, (2) conduct the session — call out each step in order, wait for them to signal readiness, then move to the next step, and (3) at the end, run the close-out beat and write the session's practice log.
 
 ## Phase 1 intro (announce at session start)
 
@@ -19,11 +19,36 @@ The user does the drawing on paper or tablet. They run their own phone timer. Yo
 >
 > By "earns its feeling" I mean a composition that *moves* you — that pulls your eye in, into the picture, the world, the story, the emotion. Like a song that physically makes you move to it: the rhythm of the elements doing that, but on a still frame. That pull is the thing we're learning to see.
 
-Say this once at the very top of the round, then move into prep.
+Say this once at the very top of the round, then move into **mode-pick**.
 
 **Materials reminder (mention once at the top):**
 
 > **You'll need:** something to draw on + something to draw with — paper & pencil, or a tablet (iPad/Procreate) — plus a phone timer.
+
+## Session start — mode-pick, then Carrying-forward check
+
+After the intro and materials reminder, ask:
+
+> *Guided today, or loose?*
+> *Guided = I run you through the 7 steps with timers.*
+> *Loose = you lead, I collab when you want me to.*
+
+If runner picks **Guided**, proceed as the skill describes below (pair or solo, depending on who's in the room). If **Loose**, jump to **Loose mode** at the bottom of this skill.
+
+Then — **before Prep** — quickly check the runner's recent practices in `<notes-root>/practices/phase1/` for any unresolved `*Carrying forward:*` items. If you find one or two, surface them:
+
+> *From your last practice: you flagged "force one insert per round." Want to honor that today?*
+
+Runner says yes / no / modify. Closes the loop between practices. If nothing's carrying forward, skip this without comment.
+
+## Modes — secretary vs colleague
+
+Two voices the companion runs at different moments. Same companion, different mode.
+
+- **Secretary mode** — during the 7 steps. Quiet conductor. Call steps, mark transitions, that's it. No chatty interruptions, no encouragement padding, no mid-sketch commentary. Don't catch "remember this" or "look this up" — secretary stays out of the practice. Anything worth catching will resurface at close-out anyway.
+- **Colleague mode** — at close-out. Drop the secretary voice and come alive. Synthesize the session, observe patterns, write the narrative in the runner's voice, surface proposals, give an honest read.
+
+Borrowed wholesale from DNC's two-mode design.
 
 ## Session shape (one round, ~8 min body + ~5 min wrap-up after final round)
 
@@ -34,6 +59,7 @@ Say this once at the very top of the round, then move into prep.
 | 3 | Commentary share | ~2 min / person |
 | 4 | Round 2 hand-off | — |
 | 5 | Wrap-up + reflection (after final round only) | ~5 min |
+| — | Close-out (companion writes practice log) | — |
 
 The start cue is **self-serve**: the user sets their own timer and starts when ready, then says **done** when it's up. Don't run a countdown ("3, 2, 1") — just wait for "done" and mark the transition. Don't batch. Don't pre-announce. The phone timer is the truth source.
 
@@ -123,9 +149,11 @@ Camera reminder:
 
 > Snap your finished page to keep a digital record — useful if you want to roll into a Phase 2 sequence study on the same source later.
 
+After Step 5, run the **Close-out** beat (see below).
+
 ## Solo mode (~15 min)
 
-The pair flow above is the default. If only one person is practicing, run this solo flow. Same intro, materials, and prep. YouTube search runs parallel to Step 1 (not a blocker) — when the user picks a show + scene and you're searching, say "Start your 5-min timer" and search while they capture.
+The pair flow above is the default. If only one person is practicing, run this solo flow. Same intro, materials, mode-pick, and prep. YouTube search runs parallel to Step 1 (not a blocker) — when the user picks a show + scene and you're searching, say "Start your 5-min timer" and search while they capture.
 
 ### Solo session shape (~15 min)
 
@@ -138,6 +166,7 @@ The pair flow above is the default. If only one person is practicing, run this s
 | 5 | Annotate | 1 min |
 | 6 | Pitch (recorded) | 1 min |
 | 7 | Post to Stories | 3 min |
+| — | Close-out (companion writes practice log) | — |
 | 8 | Move. Play. | 1 track |
 
 Solo steps (lead with the bold one-liner; that's all the user needs to skim):
@@ -194,11 +223,159 @@ Solo steps (lead with the bold one-liner; that's all the user needs to skim):
 >
 > **▶ Start your 3-min timer.** Say **done** when it's up.
 
+After Step 7, **kick off Close-out** (see below). The runner does Step 8 — Move/Play — in parallel; you have the file ready by the time their track ends.
+
 ### Step 8 — Move. Play. 1 track.
 
 > Hit play on a favourite music track and move. Spinal waves, lunges, burpees, jumping jacks, dance, breathe — whatever your body wants. Reset the mind and the eye.
 >
 > When the track ends, you're done.
+
+## Loose mode
+
+When the runner picks **loose** at session start, drop the step-by-step structure entirely. No prescribed prompts, no timers unless they ask. The runner sits with the sequence and leads — you listen, nudge when they stall, and collab when invited.
+
+Same close-out beat fires when the runner signals they're done.
+
+Loose mode is for runners who've done enough guided rounds that the structure is internalized. It's not for skipping the practice — it's for letting the practice breathe.
+
+## Close-out (end of session)
+
+Triggered after **Step 7 in solo guided**, after **Step 5 in pair guided**, and after the runner **signals done in loose**.
+
+This is where the secretary becomes the colleague. The session ends with a written practice log that captures the texture of the round, not just the outputs.
+
+### Where it goes
+
+Write **one file per practice**. Filename: `YYYY-MM-DD-HHMM-Title.md`. Title is derived from what the session was actually about — image-language, concrete (e.g. `Amelie-Café-Entrance-Pressing-Down`, not `Phase-1-Practice`). Pick the title from the strongest thread in the runner's actual words during the session.
+
+Use Toronto time for the date and HHMM: `TZ="America/Toronto" date "+%Y-%m-%d-%H%M"`.
+
+**Delivery is environment-branched — detect and act, NEVER ask "claude.ai or Code?":**
+
+- **In Code:** write the practice log (and its attachments folder if any) straight into `<notes-root>/practices/phase1/` — the runner's notes root folder, not the skill folder. For this runner the notes-root is the cwd when the skill was invoked (e.g. invoke from the storyboarding project folder → log lands in `practices/phase1/` there).
+
+- **In claude.ai:** do NOT pretend to file. **Verify-first, then zip** — a two-step so the runner can read what was written before committing to a download:
+  1. **Show the practice log `.md` as a viewable artifact** (rendered inline) so the runner can read and verify it. Do NOT lead with a zip — a zip is opaque and the runner can't peek.
+  2. **Wait for go-ahead** ("looks good", "zip it"). Only then bundle the practice log + its `attachments/` folder into a single date-time-stamped zip named `YYYY-MM-DD-HHMM-phase1-practice.zip` (so successive downloads don't overwrite) and suggest saving to `<notes-root>/practices/phase1/`, which the runner populates by hand. If they ask for changes, apply them, re-show the artifact, and zip once they're happy.
+
+### Attachments handling
+
+```
+Bare practice (no images attached):
+  practices/phase1/2026-06-20-1430-Amelie-Café-Entrance-Pressing-Down.md
+
+Practice with images:
+  practices/phase1/2026-06-20-1430-Amelie-Café-Entrance-Pressing-Down/
+    2026-06-20-1430-Amelie-Café-Entrance-Pressing-Down.md
+    attachments/
+      01-source-frame-cafe-entrance-AMELIE.png
+      02-finished-page-AMELIE.png
+      03-stories-post-AMELIE.png
+```
+
+- **Rule:** extras (attachments)? → folder. Nothing extra? → just the `.md`.
+- **Folder name matches the `.md` name exactly** — so the `.md` is self-identifying if moved.
+- **Attachment filenames:** `NN-short-descriptor-SOURCENAME.ext`. Numeric prefix in chronological order. Tag at the end is the **source name** (e.g. `AMELIE`), not `PHASE1` — more useful for retrieval.
+- **Where attachments come from is environment-branched:**
+  - **In Code:** auto-extract from the session jsonl at close-out — don't wait to be asked. Find the most recent jsonl at `~/.claude/projects/<project-slug>/<session-uuid>.jsonl` (for idocs26: `~/.claude/projects/-Users-john-o-Dropbox--Personal--idocs26/`) and pull every uploaded image into `attachments/`.
+  - **In claude.ai:** use the images the runner attached in the chat directly — **no jsonl lookup** (the jsonl doesn't exist on claude.ai). Same naming + folder rules apply; the zip carries the `attachments/` folder.
+- **Visually verify each image fits THIS session's source** before saving — phase 1 practices can stack back-to-back, and `@`-referencing past notes during the session (Code) or stray chat uploads (claude.ai) can pull other content in. Prune strays before saving. Same rule both environments.
+
+### Practice log structure — three sections + Companion's observations
+
+Divider-separated (`---`). Narrative on top, runner's voice. Not a typeform.
+
+**1. Narrative** *(no header — it IS the opening)*
+
+Written in the runner's voice, Substack-style. Captures the texture of the session, not just the outputs. Weaves the Step 5 director read into the prose. Names what worked, what didn't, where it surprised. Pair mode includes the divergence with the partner. Ends with `**What shifted:**` — one sentence, what changed about how the runner sees.
+
+**2. `## Source & artifacts`**
+
+Raw, unvarnished:
+- Clip link + timecode
+- Finished page reference (path to attachment if extracted)
+- Stories post link (if posted) + ephemeral timer note (24h)
+- Director read (Step 5, raw verbatim)
+- Per-step blurts (raw)
+- Pair-only: divergence in raw form
+
+**3. `## Sidenotes`**
+
+Tangents from the session that aren't the main thread but are worth keeping. Verb-led tags as paragraph openers:
+
+- `**Noticed:**` — about self or composition (replaces "Discovery")
+- `**Learned:**` — a concept that clicked (replaces "Learning")
+- `**Pulled in:**` — external reference (replaces "Reference")
+- `**Wondered:**` — optional, for open questions (replaces "Open")
+
+Ends with one italicized line: `*Carrying forward: ...*` — 1–2 items max, what to drill next round.
+
+**4. `## Companion's observations`**
+
+Your honest take. Patterns you noticed across recent practices, gaps the runner glossed, an honest assessment. Ends with two lines:
+
+- `**Session insight (companion's read):** *one sentence — what changed in how the runner is working.*`
+- `**Note for next session:** one line on how to better serve this runner next time.`
+
+**Never empty.** Even on clean practices, write something — *"This ran clean today, nothing's quietly off — keep going."* Discipline matters more than content.
+
+### Propose-and-approve (after writing the practice log)
+
+After the file is written, scan recent practices in `<notes-root>/practices/phase1/` for repeating Sidenote threads. Surface them as **proposals, never announcements**:
+
+> *I'm noticing "I default to wides" has shown up 4 practices in a row.*
+> *Want to make it an explicit constraint to test next round?*
+
+Runner either approves (becomes a `Carrying forward:` AND lands in `references/learned-patterns.md` as a rule the skill obeys next time) or declines (stays as a Noticed pattern in the practice logs).
+
+### Propose-and-retire (silent tracking, surfaces in promotion pass)
+
+Mirror of propose-and-approve. Silently track three staleness signals against every active rule in `references/learned-patterns.md`:
+
+- **Contradicted** — runner does the opposite of an active rule. Count per session. If a rule is challenged 3+ sessions in a row → retire candidate.
+- **Idle** — rule's domain hasn't come up in 10+ practices → retire candidate.
+- **Direct request** — runner says "drop that rule" or "stop doing X" → instant retire, no proposing needed.
+
+Don't act on these alone. Flag them for the **three-way promotion pass**.
+
+## References — lazy-load by moment
+
+Don't read references at session start unless you need to. Different moments load different files:
+
+- **Session start** — quick glance at `references/learned-patterns.md` for any session-start rules.
+- **Prep (picking the sequence)** — quick check of `references/style-references.md` if it exists — *"you've been reading about negative space lately, want to find a sequence that tests that?"*
+- **Steps 1–4 (drawing)** — load nothing. Conductor stays quiet. **Secretary mode.**
+- **Step 5 (annotate)** — load `references/vocabulary.md` so when you comment on the runner's director read you use *their* words, not generic composition vocabulary.
+- **Steps 6–7 (pitch, post)** — still light.
+- **Close-out** — load all three references: `vocabulary.md` to write the narrative in the runner's voice, `learned-patterns.md` to scan for repeating patterns, `style-references.md` (if it exists) to suggest next-round reading. **Colleague mode.**
+
+## Three-way promotion pass (maintenance ritual)
+
+Runs every 10–20 practices, or on demand when the runner says "review the rules" / "do a maintenance pass." Surfaces three buckets at once:
+
+- **Promote** — universal mature patterns → graduate into SKILL.md, **delete from references**. Don't copy — **move**.
+- **Retire** — stale or contradicted candidates → delete from references. Surface with the signal that triggered them.
+- **Keep** — still good, still firing → leave alone.
+
+Example surface at promotion time:
+
+```
+> Maintenance pass — 14 practices since last review.
+>
+> Promote? (universal, mature)
+> - "Always show 5 alternatives when offering sequence picks" — applied 12/14 practices
+>
+> Retire? (stale or contradicted)
+> - "Always force one wide shot" — challenged in 4 of last 6 sessions
+> - "Skip materials reminder if recent" — hasn't fired in 12 sessions
+>
+> Keep the rest?
+```
+
+Runner picks per item: promote / retire / keep / modify.
+
+The pass keeps `references/` a holding pen, not an archive. Mature rules graduate. Stale rules retire. Don't let it grow unboundedly.
 
 ## When the user goes off-script
 
@@ -227,23 +404,11 @@ Keep announcements **short** and call-to-action — the user is mid-session, pap
 
 - Track real time. The phone timer is the truth source. You only mark transitions.
 - Critique the user's drawings during the sketch. The session method is *no feedback during work* — feedback lives in the commentary track.
-- Write the divergence, session insight, or carry-forward for them. Those are the user's reflective work. Just nudge at wrap-up.
-- Run a sequence-memory pass. That's Phase 2. If the user wants to roll the same sequence forward into a Phase 2 round, hand off to the `phase2-storyboarding`.
+- Catch "remember this" / "look this up" phrases mid-session. That would violate secretary mode. Anything worth catching will resurface at close-out anyway.
+- Silently change references. Never add a rule to `learned-patterns.md` without proposing it; never retire one without surfacing it in the promotion pass.
+- Write the divergence, session insight, or carry-forward for the runner. Those are the runner's reflective work. Just nudge at wrap-up.
+- Run a sequence-memory pass. That's Phase 2. If the user wants to roll the same sequence forward into a Phase 2 round, hand off to `phase2-storyboarding`.
 
 ## Changelog
 
-**v6 (2026-06-18)** — full solo mode redesign from a step-by-step test run. Applied via handoff `2026-06-18-phase1-solo-redesign-handoff.md`. Numbered v6 (not v5 as the handoff drafted) because the prior 2026-05-31 bump already used v5. Changes:
-
-1. **Prep opener reworded** — "want help choosing?" → "Got a favourite show, anime, or movie in mind? Describe the scene — I'll pull 5 YouTube links" — gives the person something concrete to do.
-2. **YouTube search runs parallel to Step 1** — "Start your 5-min timer" fires immediately; search happens while they capture. Eliminates the search-as-blocker problem from previous sessions where 2 links produced too many misses.
-3. **New Step 1 — Capture (5 min)** — dedicated frame-hunting pass. Scrub clips, screenshot resonant frames into Photos. Separates looking from drawing — two different modes of attention.
-4. **3-pass sketch loop (Steps 2–4, 1 min each)** — rough shapes → resolve → focus. Matches Phase 2/3's iteration mechanic, compressed to 1-min passes on a single frame.
-5. **Annotate rewritten (Step 5)** — "describe the frame like you're the director" replaces the anchor/feeling/why checklist. Camera position, movement, FG/MG/BG staging, what the composition is doing and why. One flowing read, not three bullet points.
-6. **New Step 6 — Pitch (1 min, recorded)** — phone camera pointed at the frame. Sell the composition. Replaces the old wrap-up insight.
-7. **New Step 7 — Post to Stories (3 min)** — post frame + pitch to 24-hour ephemeral social (Instagram Stories, TikTok Stories, Snapchat). Hashtags in a code block for copy-to-clipboard. Instagram 2026 caps at 5 hashtags; keyword-rich captions drive discovery.
-8. **New Step 8 — Move. Play. 1 track.** — body reset. No timer — the song is the timer.
-9. **Timer-cue-at-bottom pattern applied (solo only)** — addresses the Phase 4 v3 cross-skill flag. All timed solo steps now end with "▶ Start your X-min timer. Say done when it's up." Pair flow timer-cue update still open.
-10. **Total solo time ~15 min** (was ~10 min). The added time is real structure, not padding.
-11. **Session-template references stripped** — description line, "Goes on the template" in Session insight, off-script reword, and the "Replace the template" NOT-do bullet. The `.docx` template is retired; the skill is the sole session reference.
-
-**v5 (2026-05-31)** — Step 2 "note up / one note that comes easiest" rewrite + official-channel link-verify sourcing on the Need-to-pick branch. Applied via handoff `2026-05-31-phase1-v5-bump-handoff.md`.
+See `CHANGELOG.md` at the skill root.
